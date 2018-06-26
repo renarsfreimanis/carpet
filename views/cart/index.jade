@@ -1,0 +1,36 @@
+html
+  head
+    title Product
+body
+  h3 Cart Info
+  table(border='1')
+    tr
+      th Action
+      th Name
+      th Photo
+      th Price
+      th Quantity
+      th Sub Total
+    if session.cart
+      -index = 0
+      -sum = 0
+      if session.cart
+        each item in session.cart
+          -sum += item.product.price * item.quantity
+          tr
+            td
+              a(href='/cart/delete/' + index) X
+              -index++
+              td #{item.product.name}
+              td
+                img(src='/images/' + item.product.photo, width='50')
+              td #{item.product.price}
+              td #{item.quantity}
+              td #{item.product.price * item.quantity}
+        tr
+          td(colspan='5', align='center') Sum
+          td #{sum}
+  br
+  a(href='/product') Continue Shopping
+  &nbsp;
+  a(href='/cart/checkout') Checkout

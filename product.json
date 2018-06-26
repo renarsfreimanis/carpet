@@ -1,0 +1,32 @@
+{ 
+    "_id" : ObjectId("5abb8d5015a64d051f058e8f"), 
+    "name" : "carpet1", 
+    "price" : 30.0, 
+    "quantity" : 5.0, 
+    "statuss" : true, 
+    "photo" : "carpet1.jpg"
+}
+{ 
+    "_id" : ObjectId("5abb8d5015a64d051f058e90"), 
+    "name" : "carpet2", 
+    "price" : 40.0, 
+    "quantity" : 3.0, 
+    "statuss" : true, 
+    "photo" : "carpet2.jpg"
+}
+{ 
+    "_id" : ObjectId("5abb8d5015a64d051f058e91"), 
+    "name" : "carpet3", 
+    "price" : 19.0, 
+    "quantity" : 9.0, 
+    "statuss" : true, 
+    "photo" : "carpet3.jpg"
+}
+{ 
+    "_id" : ObjectId("5abb8d5015a64d051f058e92"), 
+    "name" : "carpet4", 
+    "price" : 25.0, 
+    "quantity" : 4.0, 
+    "statuss" : true, 
+    "photo" : "carpet4.jpg"
+}

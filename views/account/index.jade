@@ -1,0 +1,20 @@
+html
+  head
+    title Login
+body
+  h3 Login
+  p #{msg}
+  form(method='post', action='/account/login')
+  table(border='0')
+    tr
+      th Username
+      td
+        input(type='text', name='username')
+    tr
+      th Password
+      td
+        input(type='password', name='password')
+    tr
+      th &nbsp;
+      td
+        input(type='submit', value='Login')

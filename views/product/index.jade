@@ -1,0 +1,20 @@
+html
+  head
+    title Product
+body
+  h3 Product List
+  table(border='1')
+    tr
+      th Name
+      th Photo
+      th Price
+      th Action
+    if products
+      each product in products
+        tr
+          td #{product.name}
+          td
+            img(src='/images/' + product.photo, width='50')
+            td #{product.price}
+            td
+              a(href='/cart/buy/' + product._id) Buy Now
